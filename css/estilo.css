@@ -1,0 +1,40 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    background-color:#000 ;
+    width: 100%;
+}    
+
+nav ul{
+    /* remove o ícone(marcação/bolinha) do li*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    /* modifica a exibição da lista para o bloco de linha, ou seja um li na frente do outro */
+    display: inline-block;  
+}
+
+nav ul li a{
+    /* remove o sublinhado do link */
+    text-decoration: none;
+    color: #FFF;
+    /* texto em negrito */
+    font-weight: bold;
+    padding: 15px;
+    display: block;
+}
+
+nav ul li a:hover{
+    background-color: #3a3939;
+    color:#FFF;
+}
