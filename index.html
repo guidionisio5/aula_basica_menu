@@ -9,6 +9,12 @@
 
     <!-- Importação do Font awesone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Importação do Fancybox -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
 
 </head>
 <body>
@@ -56,42 +62,42 @@
             <h3><i class="fa-solid fa-image"></i> Inserindo galerias de imagens</h3>
             <div class="imagens-coluna">
                 <figure>
-                    <img class="imagens-galeria" src="img/1.jpg" alt="">
+                    <img data-fancybox="gallery" data-caption="HTML 5 - Conheça a evolução" class="imagens-galeria" src="img/1.jpg" alt="">
                     <figcaption>Códigos HTML</figcaption>
                 </figure>
                 
                 <figure>
-                    <img class="imagens-galeria" src="img/2.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/2.jpg" alt="">
                     <figcaption>Visual Studio Code </figcaption>
                 </figure>
                 
                 <figure>
-                    <img class="imagens-galeria" src="img/3.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/3.jpg" alt="">
                     <figcaption>Codificando</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/4.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/4.jpg" alt="">
                     <figcaption>Home Office</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/5.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/5.jpg" alt="">
                     <figcaption>Javascript e Café</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/6.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/6.jpg" alt="">
                     <figcaption>Programando o futuro</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/7.jpg" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/7.jpg" alt="">
                     <figcaption>HTML e CSS</figcaption>
                 </figure>
 
                 <figure>
-                    <img class="imagens-galeria" src="img/8.png" alt="">
+                    <img data-fancybox="gallery" class="imagens-galeria" src="img/8.png" alt="">
                     <figcaption>Tecnologias</figcaption>
                 </figure>
 
@@ -109,6 +115,11 @@
 
         </div>
 
-    </div> <!--final do container-->
+    </div>
+    <!--final do container-->
+    <!-- Scripts ficaram abaixo-->
+    <!-- Importação do JS do FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
 </body>
 </html>

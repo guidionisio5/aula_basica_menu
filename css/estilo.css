@@ -112,3 +112,19 @@ figcaption{
     padding: 10px;
 
 }
+
+figure:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.imagens-galeria:hover{
+    /* Pode se utilizar filter para colocar um efeito sao varios que existem */
+    /* filter:blur(1px) */
+    /* filter:grayscale(100%) */
+    /* filter:saturate(190) */
+    /* filter:hue-rotate(100) */
+    /* filter:invert(80%); */
+    /* filter:sepia(70%); */
+    filter:brightness(120%);
+}
