@@ -65,7 +65,7 @@ nav ul li a:hover{
 #mapas{
     float: left;
     width: 100%;
-    height: 500px;
+    height: auto;
     padding: 10px;
 }
 
@@ -80,8 +80,7 @@ nav ul li a:hover{
 .icones-img{
     width: 150px ;
     height: 130px;
-    border: 2px solid black;
-    padding: 7px;
+    border: 10px solid black;
     margin: 10px;
     border-radius: 4px;
 }
@@ -130,8 +129,19 @@ figure:hover{
 }
 
 .tamanho-video{
-    width: 50%;
+    width: 49%;
     float: left;
     height: 360px;
-    padding: 10px;
+    margin: 0.5%;
+    border: solid 10px;
+    border-radius: 4px;
+}
+
+.tamanho-mapa{
+    width: 100%;
+    height: 450px;
+    float: left;
+    border: solid 10px;
+    border-radius: 4px;
+
 }
