@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,124 +8,148 @@
     <title>Menu Básico - HTML e CSS</title>
     <link rel="stylesheet" href="css/estilo.css">
 
-    <!-- Importação do Font awesone -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- Importação do Fancybox -->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
-    />
+    <!-- Importação do Font awesone / Colocar ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Importação do Fancybox / Caixas das Imagens -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
 
 </head>
+
 <body>
     <!-- container = div principal do site -->
     <div id="container">
         <!-- a tag nav é a navegação do site -->
         <nav>
             <ul>
-                <li><a href="">Logo</a></li>
+                <li><a href=""><i class="fa-brands fa-html5"></i></a></li>
                 <li><a href="#icones"><i class="fa-solid fa-circle-info"></i> Ícones</a></li>
                 <li><a href="#imagens"><i class="fa-solid fa-image"></i> Imagens</a></li>
                 <li><a href="#videos"><i class="fa-solid fa-video"></i> Vídeos</a></li>
                 <li><a href="#mapas"><i class="fa-solid fa-map"></i> Mapas</a></li>
             </ul>
         </nav>
-        <div id="icones">
-            <h3><i class="fa-solid fa-circle-info"></i> Conhecendo bibiotecas de ícones</h3>
+
+        <main>
+
+            <div id="icones">
+                <h3><i class="fa-solid fa-circle-info"></i> Conhecendo bibiotecas de ícones</h3>
                 <div class="icones-coluna">
-                <p>Principais bibliotecas</p>
-                <ul>
-                    <li><b>Font awesone</b></li>
-                    <li>Material icons</li>
-                    <li>Ionicons</li>
-                    <li>CSS.gg</li>
-                    <li>Feathericons</li>
-                    <li>Eva Icons</li>
-                    <li>Heroicon</li>
-                    <li>Bootstrap icons</li>
-                    <li>Remix Icon</li>
-                    <li>Octicons</li>
-                    <li>Ikonate</li>
-                </ul>
-            </div> <!--Final da primeira coluna-->
-            
-            <div class="icones-coluna">
-                <img class="icones-img" src="img/logo_fontawesome.png" alt="">
-                <img class="icones-img" src="img/logo_materialicons.png" alt="">
-                <img class="icones-img" src="img/logo_ionicons.png" alt="">
-                <img class="icones-img" src="img/logo_bootstraplicons.png" alt="">
-            </div>
+                    <p>Principais bibliotecas</p>
+                    <ul>
+                        <li><b>Font awesone</b></li>
+                        <li>Material icons</li>
+                        <li>Ionicons</li>
+                        <li>CSS.gg</li>
+                        <li>Feathericons</li>
+                        <li>Eva Icons</li>
+                        <li>Heroicon</li>
+                        <li>Bootstrap icons</li>
+                        <li>Remix Icon</li>
+                        <li>Octicons</li>
+                        <li>Ikonate</li>
+                    </ul>
+                </div>
+                <!--Final da primeira coluna-->
 
-        </div>
-
-        <div id="imagens">
-            <h3><i class="fa-solid fa-image"></i> Inserindo galerias de imagens</h3>
-            <div class="imagens-coluna">
-                <figure>
-                    <img data-fancybox="gallery" data-caption="HTML 5 - Conheça a evolução" class="imagens-galeria" src="img/1.jpg" alt="">
-                    <figcaption>Códigos HTML</figcaption>
-                </figure>
-                
-                <figure>
-                    <img data-fancybox="gallery" class="imagens-galeria" src="img/2.jpg" alt="">
-                    <figcaption>Visual Studio Code </figcaption>
-                </figure>
-                
-                <figure>
-                    <img data-fancybox="gallery" class="imagens-galeria" src="img/3.jpg" alt="">
-                    <figcaption>Codificando</figcaption>
-                </figure>
-
-                <figure>
-                    <img data-fancybox="gallery" class="imagens-galeria" src="img/4.jpg" alt="">
-                    <figcaption>Home Office</figcaption>
-                </figure>
-
-                <figure>
-                    <img data-fancybox="gallery" class="imagens-galeria" src="img/5.jpg" alt="">
-                    <figcaption>Javascript e Café</figcaption>
-                </figure>
-
-                <figure>
-                    <img data-fancybox="gallery" class="imagens-galeria" src="img/6.jpg" alt="">
-                    <figcaption>Programando o futuro</figcaption>
-                </figure>
-
-                <figure>
-                    <img data-fancybox="gallery" class="imagens-galeria" src="img/7.jpg" alt="">
-                    <figcaption>HTML e CSS</figcaption>
-                </figure>
-
-                <figure>
-                    <img data-fancybox="gallery" class="imagens-galeria" src="img/8.png" alt="">
-                    <figcaption>Tecnologias</figcaption>
-                </figure>
+                <div class="icones-coluna">
+                    <img class="icones-img" src="img/logo_fontawesome.png" alt="">
+                    <img class="icones-img" src="img/logo_materialicons.png" alt="">
+                    <img class="icones-img" src="img/logo_ionicons.png" alt="">
+                    <img class="icones-img" src="img/logo_bootstraplicons.png" alt="">
+                </div>
 
             </div>
 
-        </div>
+            <div id="imagens">
+                <h3><i class="fa-solid fa-image"></i> Inserindo galerias de imagens</h3>
+                <div class="imagens-coluna">
+                    <figure>
+                        <img data-fancybox="gallery" data-caption="HTML 5 - Conheça a evolução" class="imagens-galeria"
+                            src="img/1.jpg" alt="">
+                        <figcaption>Códigos HTML</figcaption>
+                    </figure>
 
-        <div id="videos">
-            <h3><i class="fa-solid fa-video"></i> Inserindo vídeos</h3>
+                    <figure>
+                        <img data-fancybox="gallery" class="imagens-galeria" src="img/2.jpg" alt="">
+                        <figcaption>Visual Studio Code </figcaption>
+                    </figure>
 
-            <iframe class="tamanho-video" src="https://www.youtube.com/embed/Ux3oeIpEu74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figure>
+                        <img data-fancybox="gallery" class="imagens-galeria" src="img/3.jpg" alt="">
+                        <figcaption>Codificando</figcaption>
+                    </figure>
 
-            <iframe class="tamanho-video" src="https://www.youtube.com/embed/Ejkb_YpuHWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figure>
+                        <img data-fancybox="gallery" class="imagens-galeria" src="img/4.jpg" alt="">
+                        <figcaption>Home Office</figcaption>
+                    </figure>
 
-            <iframe class="tamanho-video" src="https://www.youtube.com/embed/ctx2h60FUIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figure>
+                        <img data-fancybox="gallery" class="imagens-galeria" src="img/5.jpg" alt="">
+                        <figcaption>Javascript e Café</figcaption>
+                    </figure>
 
-            <video class="tamanho-video"  controls>
-                <source src="videos/mov_bbb.mp4" type="video/mp4">
-            </video>
+                    <figure>
+                        <img data-fancybox="gallery" class="imagens-galeria" src="img/6.jpg" alt="">
+                        <figcaption>Programando o futuro</figcaption>
+                    </figure>
 
-        </div>
+                    <figure>
+                        <img data-fancybox="gallery" class="imagens-galeria" src="img/7.jpg" alt="">
+                        <figcaption>HTML e CSS</figcaption>
+                    </figure>
 
-        <div id="mapas">
-            <h3><i class="fa-solid fa-map"></i> Inserindo mapas</h3>
-            <iframe class="tamanho-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.151735312359!2d-46.80175978521946!3d-21.96713878549761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9cb63bdb13581%3A0x8b769aa2064c309a!2sSenac%20S%C3%A3o%20Jo%C3%A3o%20da%20Boa%20Vista!5e0!3m2!1spt-PT!2sbr!4v1649804533609!5m2!1spt-PT!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <figure>
+                        <img data-fancybox="gallery" class="imagens-galeria" src="img/8.png" alt="">
+                        <figcaption>Tecnologias</figcaption>
+                    </figure>
 
-        </div>
+                </div>
+
+            </div>
+
+            <div id="videos">
+                <h3><i class="fa-solid fa-video"></i> Inserindo vídeos</h3>
+
+                <iframe class="tamanho-video" src="https://www.youtube.com/embed/Ux3oeIpEu74"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <iframe class="tamanho-video" src="https://www.youtube.com/embed/Ejkb_YpuHWs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <iframe class="tamanho-video" src="https://www.youtube.com/embed/ctx2h60FUIY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <video class="tamanho-video" controls>
+                    <source src="videos/mov_bbb.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <div id="mapas">
+                <h3><i class="fa-solid fa-map"></i> Inserindo mapas</h3>
+                <iframe class="tamanho-mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.151735312359!2d-46.80175978521946!3d-21.96713878549761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9cb63bdb13581%3A0x8b769aa2064c309a!2sSenac%20S%C3%A3o%20Jo%C3%A3o%20da%20Boa%20Vista!5e0!3m2!1spt-PT!2sbr!4v1649804533609!5m2!1spt-PT!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+        </main>
+
+        <!-- Rodapé da página -->
+        <footer>
+            <p>&copy;Desenvolvido por: <span class="negrito">Guilherme Dionisio</span></p>
+            <small>2022</small>
+        </footer>
 
     </div>
     <!--final do container-->
@@ -133,4 +158,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
 </body>
+
 </html>

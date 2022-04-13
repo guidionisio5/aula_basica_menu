@@ -12,6 +12,9 @@ nav{
     width: 100%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     float: left;
+    /* Menu fixo na parte superior */
+    position: fixed;
+    z-index: 999;
 }    
 
 nav ul{
@@ -23,7 +26,7 @@ nav ul{
 
 nav ul li{
     /* modifica a exibição da lista para o bloco de linha, ou seja um li na frente do outro */
-    display: inline-block;  
+    float: left;
 }
 
 nav ul li a{
@@ -46,6 +49,7 @@ nav ul li a:hover{
     width: 100%;
     height: auto;
     padding: 10px;
+    margin-top: 50px;
 }
 
 #imagens{
@@ -83,6 +87,7 @@ nav ul li a:hover{
     border: 10px solid black;
     margin: 10px;
     border-radius: 4px;
+    padding: 10px;
 }
 
 .imagens-coluna{
@@ -98,6 +103,7 @@ figure{
     font-weight: bold;
     margin: 0.5%;
     border-radius: 4px;
+    padding: 10px;
 }
 
 .imagens-galeria{
@@ -135,6 +141,7 @@ figure:hover{
     margin: 0.5%;
     border: solid 10px;
     border-radius: 4px;
+    padding: 10px;
 }
 
 .tamanho-mapa{
@@ -143,5 +150,24 @@ figure:hover{
     float: left;
     border: solid 10px;
     border-radius: 4px;
+    padding: 10px;
 
+}
+
+footer{
+    width: 100%;
+    background-color: #000;
+    float: left;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
 }
