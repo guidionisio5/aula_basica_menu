@@ -24,11 +24,47 @@
         <!-- a tag nav é a navegação do site -->
         <nav>
             <ul>
-                <li><a href=""><i class="fa-brands fa-html5"></i></a></li>
-                <li><a href="#icones"><i class="fa-solid fa-circle-info"></i> Ícones</a></li>
-                <li><a href="#imagens"><i class="fa-solid fa-image"></i> Imagens</a></li>
-                <li><a href="#videos"><i class="fa-solid fa-video"></i> Vídeos</a></li>
-                <li><a href="#mapas"><i class="fa-solid fa-map"></i> Mapas</a></li>
+                <li class="alinha-esquerda">
+                    <a href="">
+                        <i class="fa-brands fa-html5"></i>
+                    </a>
+                </li>
+
+                <li id="icone-responsivo">
+                    <i class="fa-solid fa-bars fa-2x" onclick="exibeMenu()"></i>
+                </li>
+
+                <div id="exibe-menu">
+                    <li>
+                        <a href="#icones">
+                            <i class="fa-solid fa-circle-info"></i>
+                            Ícones
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#imagens">
+                            <i class="fa-solid fa-image"></i>
+                            Imagens
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#videos">
+                            <i class="fa-solid fa-video"></i>
+                            Vídeos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#mapas">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Mapas
+                        </a>
+                    </li>
+                </div>
+
+
             </ul>
         </nav>
 
@@ -55,76 +91,107 @@
                 <!--Final da primeira coluna-->
 
                 <div class="icones-coluna">
-                    <img class="icones-img" src="img/logo_fontawesome.png" alt="">
-                    <img class="icones-img" src="img/logo_materialicons.png" alt="">
-                    <img class="icones-img" src="img/logo_ionicons.png" alt="">
-                    <img class="icones-img" src="img/logo_bootstraplicons.png" alt="">
+                    <div class="icones-img-tamanho">
+                        <img class="icones-img" src="img/logo_fontawesome.png" alt="">
+                    </div>
+
+                    <div class="icones-img-tamanho">
+                        <img class="icones-img" src="img/logo_materialicons.png" alt="">
+                    </div>
+
+                    <div class="icones-img-tamanho">
+                        <img class="icones-img" src="img/logo_ionicons.png" alt="">
+                    </div>
+
+                    <div class="icones-img-tamanho">
+                        <img class="icones-img" src="img/logo_bootstraplicons.png" alt="">
+                    </div>
                 </div>
 
             </div>
 
             <div id="imagens">
                 <h3><i class="fa-solid fa-image"></i> Inserindo galerias de imagens</h3>
-                <div class="imagens-coluna">
-                    <figure>
-                        <img data-fancybox="gallery" data-caption="HTML 5 - Conheça a evolução" class="imagens-galeria"
-                            src="img/1.jpg" alt="">
-                        <figcaption>Códigos HTML</figcaption>
-                    </figure>
+                <div class="centraliza-galeria">
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" data-caption="HTML 5 - Conheça a evolução"
+                                class="imagens-galeria" src="img/1.jpg" alt="">
+                            <figcaption>Códigos HTML</figcaption>
+                        </figure>
+                    </div>
+                        
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/2.jpg" alt="">
+                            <figcaption>Visual Studio Code </figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/2.jpg" alt="">
-                        <figcaption>Visual Studio Code </figcaption>
-                    </figure>
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/3.jpg" alt="">
+                            <figcaption>Codificando</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/3.jpg" alt="">
-                        <figcaption>Codificando</figcaption>
-                    </figure>
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/4.jpg" alt="">
+                            <figcaption>Home Office</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/5.jpg" alt="">
+                            <figcaption>Javascript e Café</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/4.jpg" alt="">
-                        <figcaption>Home Office</figcaption>
-                    </figure>
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/6.jpg" alt="">
+                            <figcaption>Programando o futuro</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/5.jpg" alt="">
-                        <figcaption>Javascript e Café</figcaption>
-                    </figure>
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/7.jpg" alt="">
+                            <figcaption>HTML e CSS</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/6.jpg" alt="">
-                        <figcaption>Programando o futuro</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/7.jpg" alt="">
-                        <figcaption>HTML e CSS</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img data-fancybox="gallery" class="imagens-galeria" src="img/8.png" alt="">
-                        <figcaption>Tecnologias</figcaption>
-                    </figure>
-
+                    <div class="imagens-coluna">
+                        <figure>
+                            <img data-fancybox="gallery" class="imagens-galeria" src="img/8.png" alt="">
+                            <figcaption>Tecnologias</figcaption>
+                        </figure>
+                    </div>
                 </div>
+
+
 
             </div>
 
             <div id="videos">
                 <h3><i class="fa-solid fa-video"></i> Inserindo vídeos</h3>
 
-                <iframe class="tamanho-video" src="https://www.youtube.com/embed/Ux3oeIpEu74"
+                <iframe class="tamanho-video" 
+                    src="https://www.youtube.com/embed/Ux3oeIpEu74"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
 
-                <iframe class="tamanho-video" src="https://www.youtube.com/embed/Ejkb_YpuHWs"
+                <iframe class="tamanho-video" 
+                    src="https://www.youtube.com/embed/Ejkb_YpuHWs"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
 
-                <iframe class="tamanho-video" src="https://www.youtube.com/embed/ctx2h60FUIY"
+                <iframe class="tamanho-video" 
+                    src="https://www.youtube.com/embed/ctx2h60FUIY"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -145,10 +212,17 @@
 
         </main>
 
+        <div id="topo">
+            <a href="#container">
+                <i class="fa-solid fa-arrow-up fa-3x"></i>
+            </a>
+        </div>
+
         <!-- Rodapé da página -->
         <footer>
             <p>&copy;Desenvolvido por: <span class="negrito">Guilherme Dionisio</span></p>
             <small>2022</small>
+
         </footer>
 
     </div>
@@ -156,6 +230,23 @@
     <!-- Scripts ficaram abaixo-->
     <!-- Importação do JS do FancyBox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!-- Importação do JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Scripts especificos da pagina -->
+    <!-- Linguagem de JS = JavaScript -->
+    <script>
+        // Cria uma Função exibeMenu
+        function exibeMenu() {
+            // exibe/oculta o menu mobile(hamburguer)
+            $('#exibe-menu').toggle()
+        }
+
+
+
+    </script>
 
 </body>
 
